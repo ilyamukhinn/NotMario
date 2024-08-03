@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="assets">
+      <UniqueIdentifier>{991746f4-a2e5-421d-a318-c25258466647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\fonts">
+      <UniqueIdentifier>{796697f1-1bd8-4f3c-a9ba-08a1ee031e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images">
+      <UniqueIdentifier>{e95dae00-9aa0-4dab-9fa2-78bde662cb38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images\mario">
+      <UniqueIdentifier>{7e9d660f-b153-472a-8c9d-9f0403772e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images\megaman">
+      <UniqueIdentifier>{703ca240-a691-427a-a0f2-ada0d5b8d055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images\misc">
+      <UniqueIdentifier>{08b194d5-44bd-4d00-bb70-f79a02e871a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configs">
+      <UniqueIdentifier>{e04e67c9-734c-4e77-bb5e-9f64e38085a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f33dd5ae-9b64-4d61-8f4e-fc62c37a83a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{af00ead5-8458-4a0b-a996-bdef8be88834}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Action.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Animation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Assets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EntityManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneMenu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScenePlay.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Action.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Animation.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Assets.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entity.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EntityManager.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Enums.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameEngine.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneMenu.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScenePlay.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vec2.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="configs\assets.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level1.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level2.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level3.txt">
+      <Filter>configs</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\mario.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+    <Font Include="assets\fonts\megaman.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+    <Font Include="assets\fonts\tech.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\mario\air64.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\block.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\brick.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\bush.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\bushbig.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\bushsmall.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\cloudbig.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\cloudsmall.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\coin.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\coinpulse.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\flag.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\flagpole.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\flagtop.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\goombawalk.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\ground.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\pipesmall.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\pipetall.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\qfade.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\question.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\question2.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\run64.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\mario\stand64.png">
+      <Filter>assets\images\mario</Filter>
+    </Image>
+    <Image Include="assets\images\megaman\air64.png">
+      <Filter>assets\images\megaman</Filter>
+    </Image>
+    <Image Include="assets\images\megaman\buster.png">
+      <Filter>assets\images\megaman</Filter>
+    </Image>
+    <Image Include="assets\images\megaman\run64.png">
+      <Filter>assets\images\megaman</Filter>
+    </Image>
+    <Image Include="assets\images\megaman\stand64.png">
+      <Filter>assets\images\megaman</Filter>
+    </Image>
+    <Image Include="assets\images\misc\coinspin.png">
+      <Filter>assets\images\misc</Filter>
+    </Image>
+    <Image Include="assets\images\misc\explosion128.png">
+      <Filter>assets\images\misc</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4bdd9e7b-25fe-41be-ad85-f45123e39c76}</ProjectGuid>
+    <RootNamespace>NotMario</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\temp\$(Configuration)\</IntDir>
+    <IncludePath>$(SFML_DIR)\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SFML_DIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\temp\$(Configuration)\</IntDir>
+    <IncludePath>$(SFML_DIR)\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SFML_DIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /Y /I "$(ProjectDir)assets" "$(OutDir)assets"
+xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /Y /I "$(ProjectDir)assets" "$(OutDir)assets"
+xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Action.cpp" />
+    <ClCompile Include="src\Animation.cpp" />
+    <ClCompile Include="src\Assets.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\EntityManager.cpp" />
+    <ClCompile Include="src\GameEngine.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Physics.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\SceneMenu.cpp" />
+    <ClCompile Include="src\ScenePlay.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Action.hpp" />
+    <ClInclude Include="include\Animation.hpp" />
+    <ClInclude Include="include\Assets.hpp" />
+    <ClInclude Include="include\Components.hpp" />
+    <ClInclude Include="include\Entity.hpp" />
+    <ClInclude Include="include\EntityManager.hpp" />
+    <ClInclude Include="include\Enums.hpp" />
+    <ClInclude Include="include\GameEngine.hpp" />
+    <ClInclude Include="include\Physics.hpp" />
+    <ClInclude Include="include\Scene.hpp" />
+    <ClInclude Include="include\SceneMenu.hpp" />
+    <ClInclude Include="include\ScenePlay.hpp" />
+    <ClInclude Include="include\Vec2.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="configs\assets.txt" />
+    <Text Include="configs\level1.txt" />
+    <Text Include="configs\level2.txt" />
+    <Text Include="configs\level3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\mario.ttf" />
+    <Font Include="assets\fonts\megaman.ttf" />
+    <Font Include="assets\fonts\tech.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\mario\air64.png" />
+    <Image Include="assets\images\mario\block.png" />
+    <Image Include="assets\images\mario\brick.png" />
+    <Image Include="assets\images\mario\bush.png" />
+    <Image Include="assets\images\mario\bushbig.png" />
+    <Image Include="assets\images\mario\bushsmall.png" />
+    <Image Include="assets\images\mario\cloudbig.png" />
+    <Image Include="assets\images\mario\cloudsmall.png" />
+    <Image Include="assets\images\mario\coin.png" />
+    <Image Include="assets\images\mario\coinpulse.png" />
+    <Image Include="assets\images\mario\flag.png" />
+    <Image Include="assets\images\mario\flagpole.png" />
+    <Image Include="assets\images\mario\flagtop.png" />
+    <Image Include="assets\images\mario\goombawalk.png" />
+    <Image Include="assets\images\mario\ground.png" />
+    <Image Include="assets\images\mario\pipesmall.png" />
+    <Image Include="assets\images\mario\pipetall.png" />
+    <Image Include="assets\images\mario\qfade.png" />
+    <Image Include="assets\images\mario\question.png" />
+    <Image Include="assets\images\mario\question2.png" />
+    <Image Include="assets\images\mario\run64.png" />
+    <Image Include="assets\images\mario\stand64.png" />
+    <Image Include="assets\images\megaman\air64.png" />
+    <Image Include="assets\images\megaman\buster.png" />
+    <Image Include="assets\images\megaman\run64.png" />
+    <Image Include="assets\images\megaman\stand64.png" />
+    <Image Include="assets\images\misc\coinspin.png" />
+    <Image Include="assets\images\misc\explosion128.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
