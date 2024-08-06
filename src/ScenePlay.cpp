@@ -231,6 +231,13 @@ void ScenePlay::sCollision() {
 
 				if (overlap.x > 0.0f &&
 					overlap.y > 0.0f) {
+
+					auto entityAnimName = entity->get<CAnimation>().m_animation.getName();
+					if (entityAnimName == AnimationTag::POLE_TOP ||
+						entityAnimName == AnimationTag::POLE) {
+						this->onEnd();
+					}
+
 					hasCollision = true;
 
 					auto& entityPos = entity->get<CTransform>().m_pos;

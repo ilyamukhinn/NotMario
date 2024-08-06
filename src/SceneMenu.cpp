@@ -16,7 +16,7 @@ void SceneMenu::init() {
 	this->registerAction(sf::Keyboard::D,		static_cast<uint32_t>(SceneMenuAction::PLAY));
 	this->registerAction(sf::Keyboard::Escape,	static_cast<uint32_t>(SceneMenuAction::QUIT));
 
-	this->m_title = "Mario";
+	this->m_title = "Not Mario";
 	this->m_menuStrings.push_back("Level 1");
 	this->m_menuStrings.push_back("Level 2");
 	this->m_menuStrings.push_back("Level 3");

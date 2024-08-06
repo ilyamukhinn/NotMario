@@ -219,6 +219,10 @@ xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
     <Image Include="assets\images\misc\coinspin.png" />
     <Image Include="assets\images\misc\explosion128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
